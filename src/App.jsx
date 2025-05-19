@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Clock, ArrowRight, Calendar } from 'lucide-react';
+import Logo from './assets/Logo.svg';
+
 
 const timeZonesList = [
   { label: 'IST (Asia/Kolkata) UTC+05:30', value: 'Asia/Kolkata' },
@@ -349,7 +351,7 @@ function App() {
 
   return (
     <div className="App">
-      <img src="./src/assets/Logo.svg" alt="Logo" />
+      <img src={Logo} alt="Logo" />
       <div className="glass-card">
         <h3>
           <Clock size={20} className="card-icon" />
